@@ -4,7 +4,7 @@ import {BrowserRouter, Switch, Route} from "react-router-dom"
 import {useImmerReducer} from "use-immer"
 import {CSSTransition} from "react-transition-group"
 import Axios from "axios"
-Axios.defaults.baseURL = process.env.BACKENDURL || "https://notebook-yaacoubi.herokuapp.com/api"
+Axios.defaults.baseURL = process.env.BACKENDURL || "https://notebookreactapi.herokuapp.com"
 
 // Our contexts
 import DispatchContext from "./DispatchContext.jsx"

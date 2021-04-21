@@ -27,7 +27,7 @@ function Chat(props) {
 
   // open the chat io connection: ***
   useEffect(() => {
-    socket.current = io(process.env.BACKENDURL || "https://notebook-yaacoubi.herokuapp.com/api")
+    socket.current = io(process.env.BACKENDURL || "https://notebookreactapi.herokuapp.com")
     socket.current.on("chatFromServer", (message) => {
       setState((draft) => {
         draft.chatMessages.push(message)
